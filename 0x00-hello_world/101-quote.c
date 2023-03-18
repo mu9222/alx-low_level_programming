@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - A Programm that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19"
+ * main - A Programm that prints a line to the standard e
  * Return: 1 (Success)
  */
 int main(void)
