@@ -2,9 +2,7 @@
 
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * print_alphabet - print all alphabet in lowercase
  */
 
 void print_alphabet(void)
@@ -13,8 +11,8 @@ void print_alphabet(void)
 
 	while (i <= 'z')
 	{
-	_putchar(i);
-	i++;
+		_putchar(i);
+		i++;
 	}
 	_putchar('\n');
 }
