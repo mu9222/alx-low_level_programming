@@ -9,12 +9,12 @@
 int main(void)
 {
 	int i;
-	unsigned long int f[50];
+	unsigned int f[51] = {0};
 
 	for (i = 1; i <= 50; i++)
 	{
 		f[i] = f[i - 1] + f[i - 2];
-		printf("%ld, ", f[i]);
+		printf("%d, ", f[i]);
 	}
 	printf("\n");
 	return (0);
