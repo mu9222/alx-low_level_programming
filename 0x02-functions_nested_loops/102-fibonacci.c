@@ -10,8 +10,8 @@ int main(void)
 {
 	unsigned long int i = 0;
 	unsigned long int f[100] = {1};
-	printf("1, ");
 
+	printf("1, ");
 	for (i = 1; i < 50; i++)
 	{
 		f[i] = f[i - 1] + f[i - 2];
