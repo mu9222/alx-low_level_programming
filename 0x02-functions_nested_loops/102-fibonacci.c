@@ -8,13 +8,21 @@
 
 int main(void)
 {
-	int i;
-	unsigned int f[51] = {0};
+	unsigned long int i;
+	unsigned long int f[100] = {0};
 
 	for (i = 1; i <= 50; i++)
 	{
 		f[i] = f[i - 1] + f[i - 2];
-		printf("%d, ", f[i]);
+		if (i == 50)
+		{
+			printf("%ld", f[i]);
+		break;
+		}
+		else
+		{
+			printf("%ld, ", f[i]);
+		}
 	}
 	printf("\n");
 	return (0);
