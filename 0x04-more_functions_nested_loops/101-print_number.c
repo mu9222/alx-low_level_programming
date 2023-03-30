@@ -18,6 +18,7 @@ void print_number(int n)
 	{
 		l = n;
 	}
+
 	if (l / 10)
 	{
 		print_number(l / 10);
