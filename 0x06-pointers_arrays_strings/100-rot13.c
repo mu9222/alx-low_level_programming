@@ -20,6 +20,7 @@ char *rot13(char *str)
 			if (str[i] == let[j])
 			{
 				str[i] = num[j];
+				break;
 			}
 		}
 		i++;
