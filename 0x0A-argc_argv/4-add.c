@@ -19,14 +19,14 @@ int main(int argc, char *argv[])
 		for (j = 1; j < argc; j++)
 		{
 			k = atoi(argv[j]);
-			if (k > 0)
-			{
-				i += atoi(argv[j]);
-			}
-			else
+			if (k == 0)
 			{
 				printf("Error\n");
 				return (1);
+			}
+			else
+			{
+				i += atoi(argv[j]);
 			}
 		}
 		printf("%d\n", i);
@@ -39,5 +39,5 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	return (0);
+	return (1);
 }
