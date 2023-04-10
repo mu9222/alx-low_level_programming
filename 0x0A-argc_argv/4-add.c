@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			else
+			else if (k > 0)
 			{
 				i += atoi(argv[j]);
 			}
@@ -39,5 +39,5 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	return (1);
+	return (0);
 }
