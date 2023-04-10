@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <ctype.h>
 
 /**
- * main - function that adds positive numbers.
+ * main - function that multiplies two numbers
  * @argc: number of arguments pass to the main function
  * @argv: vector of names of arguments
  * Return: alwayes return (0)
