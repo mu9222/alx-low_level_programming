@@ -13,27 +13,26 @@
 int main(int argc, char *argv[])
 {
 	int j, k, i = 0;
+	char *c;
 
 	if (argc >= 2)
 	{
 		for (j = 1; j < argc; j++)
 		{
-			k = atoi(argv[j]);
-			if (k == 0)
+			c = argv[j];
+			k = 0;
+			while (c[k] != '\0')
 			{
-				printf("Error\n");
-				return (1);
+				if (!(c[k] > '0' && c[k] <= '9'))
+				{
+					printf("Error\n");
+					return (1);
+				}
+				k++;
 			}
-			else if (k > 0)
-			{
-				i += atoi(argv[j]);
-			}
+			i += atoi(argv[j]);
 		}
 		printf("%d\n", i);
-	}
-	else if (argc == 1)
-	{
-		printf("0\n");
 	}
 	else
 	{
