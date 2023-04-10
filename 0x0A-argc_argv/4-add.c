@@ -16,7 +16,6 @@ int main(int argc, char *argv[])
 
 	if (argc >= 2)
 	{
-		k = 0;
 		for (j = 1; j < argc; j++)
 		{
 			k = atoi(argv[j]);
