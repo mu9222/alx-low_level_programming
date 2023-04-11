@@ -1,52 +1,39 @@
 #include <stdlib.h>
 #include <stdio.h>
-
-
 /**
- * main - function that prints the minimum number of coins
- * to make change for an amount of money.
+ * main - function that prints the minimum number of coins.
  * @argc: number of arguments pass to the main function
  * @argv: vector of names of arguments
  * Return: alwayes return (0)
  **/
 
-
 int main(int argc, char *argv[])
 {
-	int k = 0, i;
+	int k, j = 0;
 
 	if (argc == 2)
 	{
-		i = atoi(argv[1]);
-		while (i != 0 )
+		k = atoi(argv[1]);
+		while (k > 0)
 		{
-			if (i % 25 == 0)
-			{
-				k++;
-				i -= 25;
-			}
-			else if (i % 10 == 0)
-			{
-				k++;
-				i -= 10;
-			}
-			else if (i % 5 == 0)
-			{
-				k++;
-				i -= 5;
-			}
-			else if (i % 2 == 0)
-			{
-				k++;
-				i -= 2;
-			}
-			else if (i % 1 == 0)
-			{
-				k++;
-				i -= 1;
+			if (k > 24)
+			{	k -= 25;
+				j++;
+			} else if (k < 25 && k > 9)
+			{	k -= 10;
+				j++;
+			} else if (k < 10 && k > 4)
+			{	k -= 5;
+				j++;
+			} else if (k < 5 && k > 1)
+			{	k -= 2;
+				j++;
+			} else if (k < 2 && k > 0)
+			{	k -= 1;
+				j++;
 			}
 		}
-		printf("%d\n", k);
+		printf("%d\n", j);
 	}
 	else if (argc == 1)
 	{
