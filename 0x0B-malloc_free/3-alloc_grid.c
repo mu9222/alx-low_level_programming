@@ -21,13 +21,20 @@ int **alloc_grid(int width, int height)
 	else
 	{
 		l = malloc(sizeof(int) * width * height);
-		for (i = 0; i < height; i++)
+		if (l == 0)
 		{
-			for (j = 0; j < width; j++)
+			return (NULL);
+		}
+		else
+		{
+			for (i = 0; i < height; i++)
 			{
-				l[height][width] = 0;
+				for (j = 0; j < width; j++)
+				{
+					l[height][width] = 0;
+				}
 			}
 		}
+		return (l);
 	}
-	return (l);
 }
