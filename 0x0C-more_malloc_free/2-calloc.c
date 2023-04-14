@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stddef.h>
 
 /**
  * _calloc - function creates an array of chars,
@@ -18,21 +19,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	else
+	str = malloc(size * nmemb);
+	if (str == NULL)
 	{
-		str = malloc(size * nmemb);
-		if (str == NULL)
-		{
-			return (NULL);
-		}
-		else
-		{
-			for (i = 0; i < nmemb; i++)
-			{
-				str[i] = 0;
-			}
-			return (str);
-		}
+		return (NULL);
 	}
-
+	for (i = 0; i < nmemb; i++)
+	{
+		str[i] = 0;
+	}
+	return (str);
 }
