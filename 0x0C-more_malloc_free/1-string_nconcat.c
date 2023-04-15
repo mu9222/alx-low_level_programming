@@ -9,17 +9,9 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, k, size_s1 = 0, size_s2 = 0;
+	unsigned int i, j = 0, k, size_s1 = 0, size_s2 = 0;
 	char *c;
 
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
 	while (s1[size_s1] != '\0')
 	{
 		size_s1++;
