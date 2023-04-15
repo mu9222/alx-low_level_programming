@@ -7,15 +7,15 @@
  * @n: number of bytes
  * Return: NULL or pointer
  */
-/*char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j = 0, k, size_s1 = 0, size_s2 = 0;
 	char *c;
 
-	while (s1[size_s1] != '\0')
+	while (s1 && s1[size_s1])
 	{
 		size_s1++;
-	} while (s2[size_s2] != '\0')
+	} while (s2 && s2[size_s2])
 	{
 		size_s2++;
 	}
@@ -33,11 +33,10 @@
 	{
 		c[i] = s2[k];
 	}
-	if (n < size_s2)
-		c[i] = '\0';
+	c[i] = '\0';
 	return (c);
-}*/
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+}
+/*char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
 	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
@@ -70,4 +69,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s[i] = '\0';
 
 	return (s);
-}
+}*/
