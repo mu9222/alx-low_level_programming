@@ -11,10 +11,8 @@
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
-	{
 		d = malloc(sizeof(struct dog));
-		printf("nothing");
-	}
+
 	if (d->name == NULL)
 		printf("Name: nil");
 	else
