@@ -2,6 +2,6 @@
 #define function_pointers_h
 
 void print_name(char *name, void (*f)(char *));
-void _putchar(char c);
+int _putchar(char c);
 
 #endif
