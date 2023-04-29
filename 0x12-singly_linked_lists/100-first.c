@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * frist_excute - function that prints strings befor excute the main function.
+ * first_excute - function that prints strings befor excute the main function.
  */
 
 void first_excute(void)
