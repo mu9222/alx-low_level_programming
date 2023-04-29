@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - function that returns the number of elements in a list.
+ * get_nodeint_at_index - function that returns the nth node of a list.
  * @head: point to list
  * @index: index of node
  * Return: pointer to node
