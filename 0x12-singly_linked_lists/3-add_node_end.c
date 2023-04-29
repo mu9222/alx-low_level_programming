@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node - function that adds a new node at the end of a list_t list.
+ * add_node_end - function that adds a new node at the end of a list_t list.
  * @head: node.
  * @str: string needs to be duplicated.
  * Return: the address of the new element, or NULL if it failed.
