@@ -1,4 +1,4 @@
-#program in assembly that prints Hello, Holberton, followed by a new line
+; program in assembly that prints Hello, Holberton, followed by a new line
 
 	global    main
 	extern    printf
