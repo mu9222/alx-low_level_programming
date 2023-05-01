@@ -29,7 +29,12 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < n_bytes; i++)
 	{
-		printf("%02x", *(ptr + i));
+		if (i == n_bytes - 1)
+		{
+			printf("%02x\n", *(ptr + i);
+			break;
+		}
+		printf("%02x ", *(ptr + i));
 	}
 	printf("\n");
 	return (0);
