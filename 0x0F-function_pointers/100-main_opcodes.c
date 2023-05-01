@@ -17,24 +17,24 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		exit(1);
 	}
 
 	n_bytes = atoi(argv[1]);
 	if (n_bytes < 0)
 	{
 		printf("Error\n");
-		return (2);
+		exit(2);
 	}
 
 	for (i = 0; i < n_bytes; i++)
 	{
 		if (i == n_bytes - 1)
 		{
-			printf("%02x\n", *(ptr + i));
+			printf("%02hhx\n", *(ptr + i));
 			break;
 		}
-		printf("%02x ", *(ptr + i));
+		printf("%02hhx ", *(ptr + i));
 	}
 	printf("\n");
 	return (0);
