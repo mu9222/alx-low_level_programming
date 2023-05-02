@@ -15,7 +15,7 @@ int is_palindrome(char *s)
 
 /**
  * str_len - function that return length of a string.
- * @str: string.
+ * @s: string.
  * Return: return length of the string.
  */
 
@@ -28,7 +28,7 @@ int str_len(char *s)
 
 /**
  * check - function that check string is a palindrome or not.
- * @str: string.
+ * @s: string.
  * @i: iterator.
  * @len: length of the string
  * Return: 1 if palindrome, 0 if not
