@@ -15,7 +15,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int curr;
 	int i, num_bits = 0;
 
-	for (i = 0; i < 63; i++)
+	for (i = 63; i >= 0; i--)
 	{
 		curr = exclu >> i;
 		if (curr & 1)
